@@ -1,0 +1,215 @@
+$font-family: 'Bangers', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+$color: blanco;
+@mixin buttonHover{
+  background-color: black;
+  color: wheat;
+}
+
+h1 {
+  @if ($color == blanco){
+    color: white;
+  } @else if ($color == naranja) {
+    color: coral;
+  }
+}
+
+h3 {
+  @if ($color == blanco){
+    color: white;
+  }
+}
+
+
+
+
+body{
+    background-image: url('https://images.pexels.com/photos/1959052/pexels-photo-1959052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  
+}
+
+
+
+#listaMenu{
+    
+    align-items: center;
+    font-family: $font-family;
+    margin: auto;
+    display: grid;
+    background-color: none;
+    grid-template-columns: 100% ;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    div{
+      background-color: none;
+      margin: auto;
+    }
+    li{
+        padding: 10px 10px 10px 10px;
+        width: fit-content;
+        list-style: none;
+        margin-left: 20px;
+        }
+    li a{
+        background-color: blanchedalmond;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 20px;
+        
+    }
+     li a:hover {
+@include buttonHover  
+  }
+}
+
+
+
+
+#barra{
+    background-color: rgba(0, 0, 0, 0.185);
+    #barra div a{
+      color: white;
+      font-family: 'Teko', sans-serif;
+      font-size: 4vh;
+
+      #barra div form{
+        font-family: 'Pacifico', cursive;}
+    }
+  }
+  
+
+
+
+
+#formulario{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:100px;
+
+    footer a {
+      font-family: $font-family;
+      color: black;
+      font-size: 14px;
+      transition-duration: 0.2s;
+    }
+    footer a:hover {
+      color: #FA944B;
+      text-decoration: none;
+    }
+    .footer-middle {
+      padding-top: 2em;
+      color: white;
+    }
+    footer div a img{
+      width: 40px;
+      height: 40px;
+  }
+  }
+  
+
+  
+
+#textoProductos{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 10px;
+   
+}
+
+
+  .sucursal{
+    font-family: 'Staatliches', cursive;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  
+
+  .textoAccesorios{
+     color: white;
+     font-family: 'Staatliches', cursive;
+     word-spacing: 20px;
+  }
+
+
+  .textoProm{
+      color: white;
+  }
+
+  #tablaProducto{
+      width: 100%;
+      margin-left: 35%;
+  }
+
+
+  #tablaAccesorios{
+    width: 100%;
+    margin-left: 35%;
+  }
+  .accesorios{
+      background-color: rgba(255, 255, 255, 0.288);
+
+      .accesorios tr td{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+      }
+      .accesorios tr td img{
+        width: 100px;
+        height: 100px;
+      }
+      
+  }
+
+
+
+
+.listaDesplegable{
+    display: block;
+    text-decoration: none;
+    background-color: black;
+}
+
+.padreFlex{
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+.lorem{
+    width: 100%;
+    color: blanchedalmond;
+}
+
+@media only screen and (min-width: 768px) {
+      #listaMenu {
+          grid-template-columns: 50% 50%;
+          
+      }
+
+   
+}
+
+@media only screen and (min-width: 1024px) {
+    #listaMenu {
+grid-template-columns: 30% 30% 30%;
+    }
+}
+
