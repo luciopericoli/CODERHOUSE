@@ -35,26 +35,22 @@
     </ul>
   </div>
     <div class="textoProm">
-    <h1>Ingresar datos para recibir nuestras ofertas diaras</h1>
+    <h1>Ingrese para acceder a nuestras promociones</h1>
     </div>
-    <form action="/action_page.php" id="formulario">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" value="Lucio"><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname" value="Pericoli"><br><br>
-        <input type="email" name="email" placeholder="nombre@ejemplo.com"/>
-        
-            <select name="Mascota">
-              <option value="L">Perro</option>
-              <option value="M">Gato</option>
-              <option value="S">Otro</option>
-            </select>
-          
-        <p>Escribir un comentario</p>
-        <textarea rows="4" cols="15"></textarea>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar información">
-      </form>
+    <form>
+      <div class="form-group row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+        </div>
+      </div>
+    </form>
       <!-- Footer -->
       <footer class="page-footer font-small blue pt-4">
 
