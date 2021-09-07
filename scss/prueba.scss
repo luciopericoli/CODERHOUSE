@@ -24,8 +24,6 @@ h3 {
 }
 
 
-
-
 body{
     background-image: url('https://images.pexels.com/photos/1959052/pexels-photo-1959052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   
@@ -191,17 +189,31 @@ flex-direction: column;
 }
 
 
-
-
 .lorem{
     width: 100%;
     color: blanchedalmond;
 }
 
-.carousel-inner{
+.textoBienvenida{
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 10px;
+}
+/*video quienes somos*/
+.global{
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+}
+.quienSomos{
+  background-color: rgba(255, 255, 255, 0.185);
+  padding: 10px;
+  border-radius: 10px;
+}
+#videoQuienesSomos{
+  display: flex;
+  align-items: left;
 }
 @media only screen and (min-width: 768px) {
       #listaMenu {

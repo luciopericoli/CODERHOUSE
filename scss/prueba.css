@@ -184,6 +184,39 @@ footer footer div a img {
   color: blanchedalmond;
 }
 
+.textoBienvenida {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 10px;
+}
+
+/*video quienes somos*/
+.global {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.quienSomos {
+  background-color: rgba(255, 255, 255, 0.185);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#videoQuienesSomos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
 @media only screen and (min-width: 768px) {
   #listaMenu {
     -ms-grid-columns: 50% 50%;
