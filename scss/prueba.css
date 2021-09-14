@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 h1 {
   color: white;
 }
@@ -304,6 +305,7 @@ h2 small {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  font-family: "Bangers", cursive;
 }
 
 .responsive-table .table-row {
@@ -315,21 +317,29 @@ h2 small {
 .responsive-table .col-1 {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
+  font-family: 'Lilita One', cursive;
+  color: black;
 }
 
 .responsive-table .col-2 {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  color: black;
+  font-family: 'Lilita One', cursive;
 }
 
 .responsive-table .col-3 {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  color: black;
+  font-family: 'Lilita One', cursive;
 }
 
 .responsive-table .col-4 {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  color: black;
+  font-family: 'Lilita One', cursive;
 }
 
 @media all and (max-width: 767px) {

@@ -4,6 +4,7 @@ $font-family: 'Bangers', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 $color: blanco;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @mixin buttonHover{
   background-color: black;
   color: wheat;
@@ -288,6 +289,7 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    font-family: $font-family;
   }
   .table-row {
     background-color: #ffffff8c;
@@ -295,15 +297,23 @@ h2 {
   }
   .col-1 {
     flex-basis: 10%;
+    font-family: 'Lilita One', cursive;
+    color: black;
   }
   .col-2 {
     flex-basis: 40%;
+    color: black;
+    font-family: 'Lilita One', cursive;
   }
   .col-3 {
     flex-basis: 25%;
+    color: black;
+    font-family: 'Lilita One', cursive;
   }
   .col-4 {
     flex-basis: 25%;
+    color: black;
+    font-family: 'Lilita One', cursive;
   }
   
   @media all and (max-width: 767px) {
