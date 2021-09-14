@@ -90,23 +90,30 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-footer {
+/* FOOTER */
+#footer {
+    display: flex;
+    align-items: flex-end;
     background: #16222A;
     background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3a60733d, #16222A);
     color: white;
     margin-top:100px;
-
-    footer a {
+     a {
       font-family: $font-family;
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: 14px;
       transition-duration: 0.2s;
+      
     }
-    footer a:hover {
-      color: #FA944B;
+     a:hover {
+      background-color: blanchedalmond;
       text-decoration: none;
+      color: black;
+      padding: 5px;
+      border-radius: 20px;
+      font-size: 20px;
+      @include buttonHover()
     }
     .footer-middle {
       padding-top: 2em;
@@ -117,7 +124,7 @@ footer {
       height: 40px;
   }
   }
-  
+  /*TERMINA FOOTER*/
 
   
 
@@ -150,9 +157,28 @@ footer {
   }
 
   #tablaProducto{
-      width: 100%;
-      margin-left: 35%;
-  }
+    width: 100%;
+    margin-left: 35%;
+}
+
+.tabla{
+    
+    font-family: $font-family;
+}
+.tabla tr td{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.tabla tr td img{
+  width: 100px;
+  height: 100px;
+}
+.tabla tr th{
+  text-align: center;
+}
+
 
 
   #tablaAccesorios{
@@ -161,6 +187,7 @@ footer {
   }
   .accesorios{
       background-color: rgba(255, 255, 255, 0.288);
+      font-family: $font-family;
 
       .accesorios tr td{
         text-align: center;
@@ -207,7 +234,7 @@ flex-direction: column;
   justify-content: space-evenly;
 }
 .quienSomos{
-  background-color: rgba(255, 255, 255, 0.185);
+  background-color: rgba(0, 0, 0, 0.356);
   padding: 10px;
   border-radius: 10px;
 }

@@ -84,36 +84,50 @@ body {
           align-items: center;
 }
 
-footer {
+/* FOOTER */
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background: #16222A;
-  background: linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3a60733d, #16222A);
   color: white;
   margin-top: 100px;
 }
 
-footer footer a {
+#footer a {
   font-family: "Bangers", cursive;
-  color: black;
+  color: white;
   font-size: 14px;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
 
-footer footer a:hover {
-  color: #FA944B;
+#footer a:hover {
+  background-color: blanchedalmond;
   text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: black;
+  color: wheat;
 }
 
-footer .footer-middle {
+#footer .footer-middle {
   padding-top: 2em;
   color: white;
 }
 
-footer footer div a img {
+#footer footer div a img {
   width: 40px;
   height: 40px;
 }
 
+/*TERMINA FOOTER*/
 #textoProductos {
   color: whitesmoke;
   text-align: center;
@@ -143,6 +157,26 @@ footer footer div a img {
   margin-left: 35%;
 }
 
+.tabla {
+  background-color: rgba(255, 255, 255, 0.288);
+  font-family: "Bangers", cursive;
+}
+
+.tabla tr td {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.tabla tr td img {
+  width: 100px;
+  height: 100px;
+}
+
+.tabla tr th {
+  text-align: center;
+}
+
 #tablaAccesorios {
   width: 100%;
   margin-left: 35%;
@@ -150,6 +184,7 @@ footer footer div a img {
 
 .accesorios {
   background-color: rgba(255, 255, 255, 0.288);
+  font-family: "Bangers", cursive;
 }
 
 .accesorios .accesorios tr td {
@@ -203,7 +238,7 @@ footer footer div a img {
 }
 
 .quienSomos {
-  background-color: rgba(255, 255, 255, 0.185);
+  background-color: rgba(0, 0, 0, 0.356);
   padding: 10px;
   border-radius: 10px;
 }
