@@ -29,19 +29,23 @@ body{
     background-image: url('https://images.pexels.com/photos/1959052/pexels-photo-1959052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   
 }
-
-
+// mapa seccion sucursal //
+.mapa{
+width: 100%;
+}
+.mapa iframe {
+  width: 70%;
+}
 
 #listaMenu{
     
     align-items: center;
     font-family: $font-family;
     margin: auto;
-    display: grid;
-    background-color: none;
-    grid-template-columns: 100% ;
-    grid-template-rows: auto auto;
-    justify-content: space-around;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
     div{
       background-color: none;
       margin: auto;
@@ -233,19 +237,22 @@ flex-direction: column;
 }
 
 .textoBienvenida {
-  color: black;
+  color: white;
   text-align: center;
   font-family: 'Staatliches', cursive;
+  font-size: 10vh;
   letter-spacing: 10px;
   margin: auto;
   width: fit-content;
-  margin-top: 100px;
+  margin-top: 200px;
   height: 200px;
+  min-height: 60vh;
 }
 /*video quienes somos*/
 .global{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .quienSomos{
@@ -320,9 +327,7 @@ h2 {
     .table-header {
       display: none;
     }
-    .table-row{
-      
-    }
+
     li {
       display: block;
     }
@@ -345,17 +350,12 @@ h2 {
   }
 }
 @media only screen and (min-width: 768px) {
-      #listaMenu {
-          grid-template-columns: 50% 50%;
-          
-      }
+ 
 
    
 }
 
 @media only screen and (min-width: 1024px) {
-    #listaMenu {
-grid-template-columns: 30% 30% 30%;
-    }
+
 }
 

@@ -15,21 +15,26 @@ body {
   background-image: url("https://images.pexels.com/photos/1959052/pexels-photo-1959052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
+.mapa {
+  width: 100%;
+}
+
+.mapa iframe {
+  width: 70%;
+}
+
 #listaMenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Bangers", cursive;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  background-color: none;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #listaMenu div {
@@ -231,16 +236,18 @@ body {
 }
 
 .textoBienvenida {
-  color: black;
+  color: white;
   text-align: center;
   font-family: 'Staatliches', cursive;
+  font-size: 10vh;
   letter-spacing: 10px;
   margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 100px;
+  margin-top: 200px;
   height: 200px;
+  min-height: 60vh;
 }
 
 /*video quienes somos*/
@@ -249,6 +256,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -366,20 +375,6 @@ h2 small {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     text-align: right;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #listaMenu {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #listaMenu {
-    -ms-grid-columns: 30% 30% 30%;
-        grid-template-columns: 30% 30% 30%;
   }
 }
 /*# sourceMappingURL=prueba.css.map */
