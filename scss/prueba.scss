@@ -42,7 +42,7 @@ width: 100%;
     align-items: center;
     font-family: $font-family;
     margin: auto;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
 
@@ -52,9 +52,10 @@ width: 100%;
     }
     li{
         padding: 10px 10px 10px 10px;
-        width: fit-content;
+        width: 100%;
         list-style: none;
         margin-left: 20px;
+
         }
     li a{
         background-color: blanchedalmond;
@@ -105,6 +106,7 @@ width: 100%;
 /* FOOTER */
 #footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     background: #16222A;
     background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
@@ -240,10 +242,10 @@ flex-direction: column;
   color: white;
   text-align: center;
   font-family: 'Staatliches', cursive;
-  font-size: 10vh;
+  font-size: 30px;
   letter-spacing: 10px;
   margin: auto;
-  width: fit-content;
+  width: 100%;
   margin-top: 200px;
   height: 200px;
   min-height: 60vh;
@@ -356,6 +358,8 @@ h2 {
 }
 
 @media only screen and (min-width: 1024px) {
-
+.textoBienvenida {
+  font-size: 10vh;
+}
 }
 
