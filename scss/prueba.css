@@ -276,6 +276,14 @@ body {
           align-items: left;
 }
 
+/*BOTON CARRITO*/
+.carrito {
+  font-family: "Bangers", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*tabla de productos*/
 .container {
   max-width: 1000px;
