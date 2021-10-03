@@ -26,6 +26,8 @@ function agregarHueso(){
     alert("Agregaste " + hueso.nombre +" al carrito " + ". Su valor con IVA es $" + hueso.precio);
 }
 
+
+
 console.log(producto);
 
 let planillaProductos = document.getElementById('planilla')
@@ -38,6 +40,7 @@ const productos = [
     {  id: 42311,  nombre: "Royal Canin Mini +7 años" , precio: 7100}];
     
  console.log(productos.length);
+ 
 for (let index = 0; index < productos.length; index++) {
     let planilla = productos[index]
     contenidoPlanilla += `<li class="table-row">
@@ -45,12 +48,18 @@ for (let index = 0; index < productos.length; index++) {
     <div class="col col-2" data-label="Nombre del producto">${planilla.nombre}</div>
     <div class="col col-3" data-label="Precio">$${planilla.precio}</div>
     <div class="col col-4" data-label="Stock">Disponible</div>
-    <button class="carrito">Añadir al carrito</button>
+    <button class="carrito" id='${planilla.id}'>Añadir al carrito</button>
     </li>`;
 }
 
 planillaProductos.innerHTML += contenidoPlanilla;
 
+for (let index = 0; index < productos.length; index++) {
+    let planilla = productos[index]
+
+let cambio = document.getElementById(planilla.id)
+cambio.onclick = () => cambio.innerHTML = "Añadido"
+};
 
 let contenedor = document.createElement("div");
     

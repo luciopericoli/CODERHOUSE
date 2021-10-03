@@ -271,7 +271,9 @@ flex-direction: column;
 .carrito{
   font-family: $font-family;
   display: flex;
-
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(202, 202, 202);
 }
 
 /*tabla de productos*/
