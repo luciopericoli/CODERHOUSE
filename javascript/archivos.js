@@ -66,3 +66,15 @@ let contenedor = document.createElement("div");
     contenedor.innerHTML = ` <h1><strong> Productos</strong> </h1>`;
 
     document.getElementById('textoProductos').appendChild(contenedor)
+
+
+$("body").prepend('<button id="btn1">BUTTON</button>');
+$("body").prepend('<button id="btn2">BUTTON</button>');
+
+$("#btn1").click(function () { 
+    console.log(this);
+});
+
+$("#btn2").click((e) => { 
+    console.log(e.target);
+});
