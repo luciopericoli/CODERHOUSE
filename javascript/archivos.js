@@ -71,6 +71,10 @@ let contenedor = document.createElement("div");
 $("body").prepend('<button id="btn1">BUTTON</button>');
 $("body").prepend('<button id="btn2">BUTTON</button>');
 
+$("#btn1").css("color", "yellow")
+        .slideUp(2000)
+        .slideDown(2000);
+
 $("#btn1").click(function () { 
     console.log(this);
 });
@@ -78,3 +82,8 @@ $("#btn1").click(function () {
 $("#btn2").click((e) => { 
     console.log(e.target);
 });
+
+$("#p1").css("color", "yellow")
+        .slideUp(2000)
+        .slideDown(2000);
+
