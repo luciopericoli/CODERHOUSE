@@ -87,3 +87,22 @@ $("#p1").css("color", "yellow")
         .slideUp(2000)
         .slideDown(2000);
 
+        var axios = require("axios").default;
+
+        var options = {
+          method: 'POST',
+          url: 'https://voicerss-text-to-speech.p.rapidapi.com/',
+          params: {key: 'undefined'},
+          headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'x-rapidapi-host': 'voicerss-text-to-speech.p.rapidapi.com',
+            'x-rapidapi-key': 'SIGN-UP-FOR-KEY'
+          },
+          data: {src: 'Hello, world!', hl: 'en-us', r: '0', c: 'mp3', f: '8khz_8bit_mono'}
+        };
+        
+        axios.request(options).then(function (response) {
+            console.log(response.data);
+        }).catch(function (error) {
+            console.error(error);
+        });
