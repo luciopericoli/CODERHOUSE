@@ -67,42 +67,53 @@ let contenedor = document.createElement("div");
 
     document.getElementById('textoProductos').appendChild(contenedor)
 
+    fetch('https://api.mercadolibre.com/sites/MLA/search?q=comida-de-perro')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        let contenido = '';
+        for (let index = 0; index < data.results.length; index++) {
+            const element = data.results[index];
+            contenido += `<li class="table-row">
+            <div class="col col-1" data-label="Codigo">${element.id}</div>
+            <div class="col col-2" data-label="Nombre del producto">${element.title}</div>
+            <div class="col col-3" data-label="Precio">$${element.price}</div>
+            <div class="col col-4" data-label="Stock">Disponible</div>
+            <button class="carrito" id='${element.id}'>Añadir al carrito</button>
+            </li>`;
+        }
+        planillaProductos.innerHTML += contenido;
+    })
+    .catch(function(error) {
+        console.log('Hubo un problema con la petición Fetch:' + error.message);
+    });
 
-$("body").prepend('<button id="btn1">BUTTON</button>');
-$("body").prepend('<button id="btn2">BUTTON</button>');
+//No entiendo porque no funciona la API de abajo//
 
-$("#btn1").css("color", "yellow")
-        .slideUp(2000)
-        .slideDown(2000);
+let planillaAccesorios = document.getElementById('planillaAccesorios');
+let contenidoPlanillaAccesorios =''
 
-$("#btn1").click(function () { 
-    console.log(this);
-});
-
-$("#btn2").click((e) => { 
-    console.log(e.target);
-});
-
-$("#p1").css("color", "yellow")
-        .slideUp(2000)
-        .slideDown(2000);
-
-        var axios = require("axios").default;
-
-        var options = {
-          method: 'POST',
-          url: 'https://voicerss-text-to-speech.p.rapidapi.com/',
-          params: {key: 'undefined'},
-          headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'x-rapidapi-host': 'voicerss-text-to-speech.p.rapidapi.com',
-            'x-rapidapi-key': 'SIGN-UP-FOR-KEY'
-          },
-          data: {src: 'Hello, world!', hl: 'en-us', r: '0', c: 'mp3', f: '8khz_8bit_mono'}
-        };
-        
-        axios.request(options).then(function (response) {
-            console.log(response.data);
-        }).catch(function (error) {
-            console.error(error);
-        });
+    fetch('https://api.mercadolibre.com/sites/MLA/search?q=accesorios-para-mascotas')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        let contenido = '';
+        for (let index = 0; index < 8; index++) {
+            const element = data.results[index];
+            contenido += `<li class="table-row">
+            <div class="col col-1" data-label="Codigo">${element.id}</div>
+            <div class="col col-2" data-label="Nombre del producto">${element.title}</div>
+            <div class="col col-3" data-label="Precio">$${element.price}</div>
+            <div class="col col-4" data-label="Stock">Disponible</div>
+            <button class="carrito" id='${element.id}'>Añadir al carrito</button>
+            </li>`;
+        }
+        planillaAccesorios.innerHTML += contenido;
+    })
+    .catch(function(error) {
+        console.log('Hubo un problema con la petición Fetch:' + error.message);
+    });
