@@ -58,6 +58,11 @@ body {
   font-size: 20px;
 }
 
+#listaMenu li #activo {
+  background-color: black;
+  color: wheat;
+}
+
 #listaMenu li a:hover {
   background-color: black;
   color: wheat;

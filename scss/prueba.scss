@@ -66,6 +66,10 @@ width: 100%;
         font-size: 20px;
         
     }
+    li #activo{
+        background-color: black;
+        color: wheat;
+    }
      li a:hover {
 @include buttonHover  
   }
