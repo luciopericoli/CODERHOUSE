@@ -18,12 +18,11 @@ const hueso = new producto("42460", "Hueso comestible 100% organico","1600 ");
 correa.precioFinal();
 hueso.precioFinal();
 
-function agregarACarrito(){
-    alert("Agregaste " + correa.nombre +" al carrito " + ". Su valor con IVA es $" + correa.precio);
+ agregarACarrito =()=>{
+   
 }
 
 function agregarHueso(){
-    alert("Agregaste " + hueso.nombre +" al carrito " + ". Su valor con IVA es $" + hueso.precio);
 }
 
 
@@ -44,11 +43,11 @@ const productos = [
 for (let index = 0; index < productos.length; index++) {
     let planilla = productos[index]
     contenidoPlanilla += `<li class="table-row">
-    <div class="col col-1" data-label="Codigo">${planilla.id}</div>
-    <div class="col col-2" data-label="Nombre del producto">${planilla.nombre}</div>
-    <div class="col col-3" data-label="Precio">$${planilla.precio}</div>
-    <div class="col col-4" data-label="Stock">Disponible</div>
-    <button class="carrito" id='${planilla.id}'>Añadir al carrito</button>
+    <div class="col col-1" data-label="Codigo" id="idProducto">${planilla.id}</div>
+    <div class="col col-2" data-label="Nombre del producto" id="nombreProducto">${planilla.nombre}</div>
+    <div class="col col-3" data-label="Precio" id="precioProducto">$${planilla.precio}</div>
+    <div class="col col-4" data-label="Stock" id="stockProducto">Disponible</div>
+    <button class="carrito" id='agregarProducto'>Añadir al carrito</button>
     </li>`;
 }
 
